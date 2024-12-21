@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        lable 'eureka-server'
+        label 'eureka-server'
     }
     stages {
         stage("GIT SCM") {
