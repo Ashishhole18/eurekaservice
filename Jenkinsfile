@@ -14,10 +14,15 @@ pipeline {
             }
         }
         stage('Dockerize application')  {
-            sh 'docker build -t latest-eureka .'
+            steps{
+                sh 'docker build -t latest-eureka .'
+            }
+
         }
         stage {
-            sh 'docker run -p 8761:8761 latest-eureka'
+            steps{
+                    sh 'docker run -p 8761:8761 latest-eureka'
+            }
         }
 
     }
