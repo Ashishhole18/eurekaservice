@@ -19,7 +19,7 @@ pipeline {
             }
 
         }
-        stage {
+        stage('Deploy') {
             steps{
                     sh 'docker run -p 8761:8761 latest-eureka'
             }
