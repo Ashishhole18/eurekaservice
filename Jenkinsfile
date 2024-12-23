@@ -3,7 +3,8 @@ pipeline {
         label 'eureka-server'
     }
     tools {
-      maven 'MVN 3.9.9'
+      maven 'MVN 3.9.9',
+      dockerTool 'Docker Latest'
     }
 
     stages {
