@@ -4,12 +4,9 @@ pipeline {
     }
     tools {
       maven 'MVN 3.9.9'
-    }
-    tools {
-        dockerTool 'Docker Latest'
+      dockerTool 'Docker Latest'
 
     }
-
     stages {
         stage("GIT SCM") {
             steps {
