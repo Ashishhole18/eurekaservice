@@ -2,6 +2,10 @@ pipeline {
     agent {
         label 'eureka-server'
     }
+    tools {
+      maven 'MVN 3.9.9'
+    }
+
     stages {
         stage("GIT SCM") {
             steps {
